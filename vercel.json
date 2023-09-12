@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/student/auth/.*",
+      "dest": "/api/student/auth"
+    },
+    {
+      "src": "/api/faculty/auth/.*",
+      "dest": "/api/faculty/auth"
+    },
+    {
+      "src": "/api/admin/auth/.*",
+      "dest": "/api/admin/auth"
+    },
+    {
+      "src": "/api/student/details/.*",
+      "dest": "/api/student/details"
+    },
+    {
+      "src": "/api/faculty/details/.*",
+      "dest": "/api/faculty/details"
+    },
+    {
+      "src": "/api/admin/details/.*",
+      "dest": "/api/admin/details"
+    },
+    {
+      "src": "/api/timetable/.*",
+      "dest": "/api/timetable"
+    },
+    {
+      "src": "/api/material/.*",
+      "dest": "/api/material"
+    },
+    {
+      "src": "/api/notice/.*",
+      "dest": "/api/notice"
+    },
+    {
+      "src": "/api/subject/.*",
+      "dest": "/api/subject"
+    },
+    {
+      "src": "/api/marks/.*",
+      "dest": "/api/marks"
+    },
+    {
+      "src": "/api/branch/.*",
+      "dest": "/api/branch"
+    }
+  ]
+}
